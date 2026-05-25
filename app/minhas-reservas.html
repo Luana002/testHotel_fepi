@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minhas Reservas | Hotel Aurora</title>
+  <link rel="stylesheet" href="../app/css/minhas-reservas.css">
+</head>
+<body>
+<header>
+  <div class="container topbar">
+
+    <div class="brand">
+      <h1>Hotel Aurora</h1>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="quartos.html">Quartos</a>
+      <a href="confirmacao.html">Confirmação</a>
+    </nav>
+
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="page-title">
+    <h2>Minhas Reservas</h2>
+
+    <p>
+      Confira os dados da sua hospedagem.
+    </p>
+  </section>
+
+  <section class="reservas-container">
+
+    <div class="card-reserva" id="cardReserva">
+
+      <div class="card-header">
+        <h3 id="nomeQuarto">--</h3>
+
+        <div class="status">
+          Reserva Ativa
+        </div>
+      </div>
+
+      <div class="reserva-info">
+
+        <div class="info-box">
+          <span>Hóspede</span>
+          <strong id="nomeHospede">--</strong>
+        </div>
+
+        <div class="info-box">
+          <span>Check-in</span>
+          <strong id="checkin">--</strong>
+        </div>
+
+        <div class="info-box">
+          <span>Check-out</span>
+          <strong id="checkout">--</strong>
+        </div>
+
+        <div class="info-box">
+          <span>Hóspedes</span>
+          <strong id="hospedes">--</strong>
+        </div>
+
+        <div class="info-box">
+          <span>Código da Reserva</span>
+          <strong id="codigoReserva">--</strong>
+        </div>
+
+      </div>
+
+      <div class="buttons">
+
+        <a href="quartos.html" class="btn btn-primary">
+          Fazer Nova Reserva
+        </a>
+
+        <a href="cancelamento.html" class="btn btn-danger">
+          Cancelar Reserva
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="empty-state" id="emptyState">
+
+      <h3>Nenhuma reserva encontrada</h3>
+
+      <p>
+        Você ainda não possui reservas cadastradas.
+      </p>
+
+      <a href="quartos.html" class="btn btn-primary">
+        Reservar Agora
+      </a>
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Hotel Aurora - Projeto acadêmico para Teste de Software</p>
+</footer>
+
+<script src="../app/js/minhas-reservas.js"></script>
+</body>
+</html>

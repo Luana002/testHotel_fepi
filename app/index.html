@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Aurora | Reserva de Hotel</title>
+  <link rel="stylesheet" href="../app/css/index.css">
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <h1>Hotel Aurora</h1>
+        <p>Conforto, tranquilidade e reserva simples</p>
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="quartos.html">Quartos</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <span class="badge">Melhor opção para sua estadia</span>
+        <h2>Reserve sua hospedagem de forma rápida e prática</h2>
+        <p>
+          Escolha as datas da sua viagem, informe a quantidade de hóspedes e encontre
+          o quarto ideal para sua estadia.
+        </p>
+      </div>
+
+      <div class="hero-card">
+        <h3>Pesquisar disponibilidade</h3>
+
+        <form id="formBusca">
+          <div class="form-group">
+            <label for="checkin">Check-in</label>
+            <input type="date" id="checkin" name="checkin" />
+          </div>
+
+          <div class="form-group">
+            <label for="checkout">Check-out</label>
+            <input type="date" id="checkout" name="checkout" />
+          </div>
+
+          <div class="form-group">
+            <label for="hospedes">Hóspedes</label>
+            <select id="hospedes" name="hospedes">
+              <option value="">Selecione</option>
+              <option value="1">1 hóspede</option>
+              <option value="2">2 hóspedes</option>
+              <option value="3">3 hóspedes</option>
+              <option value="4">4 hóspedes</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn" id="btn-pesquisar">
+            Pesquisar quartos
+          </button>
+
+          <div id="msgErro" class="message error"></div>
+          <div id="msgSucesso" class="message success"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 style="color: var(--primary); margin-bottom: 10px;">Por que escolher nosso hotel?</h2>
+      <div class="features">
+        <article class="feature">
+          <h4>Localização estratégica</h4>
+          <p>Próximo a pontos importantes da cidade, com fácil acesso.</p>
+        </article>
+
+        <article class="feature">
+          <h4>Quartos confortáveis</h4>
+          <p>Ambientes modernos, limpos e pensados para descanso.</p>
+        </article>
+
+        <article class="feature">
+          <h4>Reserva simples</h4>
+          <p>Um processo rápido para facilitar a experiência do usuário.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Hotel Aurora - Projeto acadêmico para Teste de Software</p>
+  </footer>
+  
+  <script src="../app/js/index.js"></script>
+</body>
+</html>

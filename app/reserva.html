@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finalizar Reserva | Hotel Aurora</title>
+  <link rel="stylesheet" href="../app/css/reserva.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <h1>Hotel Aurora</h1>
+        <p>Finalize sua reserva</p>
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="quartos.html">Quartos</a>
+        <a href="reserva.html">Reserva</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="page-title">
+      <h2>Finalizar Reserva</h2>
+      <p>
+        Confira os dados da hospedagem e preencha suas informações.
+      </p>
+    </section>
+
+    <section class="reservation-layout">
+
+      <!-- Resumo -->
+      <div class="card">
+
+        <h3>Resumo da Reserva</h3>
+
+        <div class="reservation-info">
+          <div>
+            <strong>Quarto:</strong>
+            <span id="quartoSelecionado">--</span>
+          </div>
+
+          <div>
+            <strong>Check-in:</strong>
+            <span id="checkin">--</span>
+          </div>
+
+          <div>
+            <strong>Check-out:</strong>
+            <span id="checkout">--</span>
+          </div>
+
+          <div>
+            <strong>Hóspedes:</strong>
+            <span id="hospedes">--</span>
+          </div>
+
+          <div>
+            <strong>Quantidade de diárias:</strong>
+            <span id="diarias">--</span>
+          </div>
+        </div>
+
+        <div class="price-box">
+          <h4>Valor total da hospedagem</h4>
+
+          <div class="price-total" id="valorTotal">
+            R$ 0
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Formulário -->
+      <div class="card">
+
+        <h3>Dados do hóspede</h3>
+
+        <form id="formReserva">
+
+          <div class="form-group">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+          </div>
+
+          <div class="form-group">
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" />
+          </div>
+
+          <button type="submit" class="btn" id="btnConfirmar">
+            Confirmar Reserva
+          </button>
+
+          <div id="msgErro" class="message error"></div>
+          <div id="msgSucesso" class="message success"></div>
+
+        </form>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Hotel Aurora - Projeto acadêmico para Teste de Software</p>
+  </footer>
+  
+  <script src="../app/js/reserva.js"></script>
+</body>
+</html>

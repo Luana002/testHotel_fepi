@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserva Confirmada | Hotel Aurora</title>
+  <link rel="stylesheet" href="../app/css/confirmacao.css">
+</head>
+<body>
+<header>
+  <div class="container topbar">
+    <div class="brand">
+      <h1>Hotel Aurora</h1>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="quartos.html">Quartos</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="confirmation-section">
+
+    <div class="confirmation-card">
+
+      <div class="success-icon">✅</div>
+
+      <h2>Reserva Confirmada!</h2>
+
+      <p>
+        Sua hospedagem foi reservada com sucesso.
+      </p>
+
+      <div class="reservation-details">
+
+        <div class="detail-item">
+          <strong>Hóspede:</strong>
+          <span id="nomeHospede">--</span>
+        </div>
+
+        <div class="detail-item">
+          <strong>Quarto:</strong>
+          <span id="quarto">--</span>
+        </div>
+
+        <div class="detail-item">
+          <strong>Check-in:</strong>
+          <span id="checkin">--</span>
+        </div>
+
+        <div class="detail-item">
+          <strong>Check-out:</strong>
+          <span id="checkout">--</span>
+        </div>
+
+        <div class="detail-item">
+          <strong>Hóspedes:</strong>
+          <span id="hospedes">--</span>
+        </div>
+
+      </div>
+
+      <div class="reservation-code">
+        Código da reserva:
+        <span id="codigoReserva"></span>
+      </div>
+
+      <div class="buttons">
+        <a href="index.html" class="btn btn-primary">
+          Voltar para Home
+        </a>
+
+        <a href="cancelamento.html" class="btn btn-outline">
+          Cancelar Reserva
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Hotel Aurora - Projeto acadêmico para Teste de Software</p>
+</footer>
+
+<script src="../app/js/confirmacao.js"></script>
+</body>
+</html>

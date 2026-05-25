@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cancelar Reserva | Hotel Aurora</title>
+  <link rel="stylesheet" href="../app/css/cancelamento.css">
+</head>
+
+<body>
+
+<header>
+  <div class="container topbar">
+
+    <div class="brand">
+      <h1>Hotel Aurora</h1>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="confirmacao.html">Reserva</a>
+    </nav>
+
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="cancel-section">
+
+    <div class="cancel-card">
+
+      <h2>Cancelar Reserva</h2>
+
+      <p>
+        Informe o código da reserva e o email utilizado.
+      </p>
+
+      <form id="formCancelamento">
+
+        <div class="form-group">
+          <label for="codigo">Código da Reserva</label>
+          <input type="text" id="codigo">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email">
+        </div>
+
+        <button type="submit" class="btn btn-danger">
+          Cancelar Reserva
+        </button>
+
+        <div id="msgErro" class="message error"></div>
+        <div id="msgSucesso" class="message success"></div>
+
+      </form>
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Hotel Aurora - Projeto acadêmico para Teste de Software</p>
+</footer>
+
+<script src="../app/js/cancelamento.js"></script>
+</body>
+</html>

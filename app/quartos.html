@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quartos Disponíveis | Hotel Aurora</title>
+  <link rel="stylesheet" href="../app/css/quartos.css">
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <h1>Hotel Aurora</h1>
+        <p>Escolha o quarto ideal para sua hospedagem</p>
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="quartos.html">Quartos</a>
+        <a href="reserva.html">Reserva</a>
+        <a href="minhas-reservas.html">Minhas Reservas</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <h2>Quartos disponíveis</h2>
+      <p>
+        Confira os quartos disponíveis para as datas selecionadas.
+      </p>
+
+      <div class="summary">
+        <div class="summary-item">
+          <span>Check-in</span>
+          <strong id="info-checkin">--</strong>
+        </div>
+
+        <div class="summary-item">
+          <span>Check-out</span>
+          <strong id="info-checkout">--</strong>
+        </div>
+
+        <div class="summary-item">
+          <span>Hóspedes</span>
+          <strong id="info-hospedes">--</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="rooms-section">
+      <div class="rooms-grid">
+
+        <!-- Quarto 1 -->
+        <article class="room-card">
+
+          <div
+            class="room-image"
+            style="background-image: url('https://images.unsplash.com/photo-1566665797739-1674de7a421a?q=80&w=1200');">
+          </div>
+
+          <div class="room-content">
+            <h3>Quarto Standard</h3>
+
+            <p>
+              Ideal para viagens rápidas e hospedagens econômicas.
+            </p>
+
+            <div class="room-info">
+              <div>🛏️ 1 cama casal</div>
+              <div>👥 Até 2 hóspedes</div>
+              <div>📶 Wi-Fi incluso</div>
+              <div class="available">Disponível</div>
+            </div>
+
+            <div class="price">
+              R$ 180 / diária
+            </div>
+
+            <button
+              class="btn reservar-btn"
+              data-quarto="Quarto Standard"
+              data-valor="180">
+              Reservar
+            </button>
+          </div>
+        </article>
+
+        <!-- Quarto 2 -->
+        <article class="room-card">
+
+          <div
+            class="room-image"
+            style="background-image: url('https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=1200');">
+          </div>
+
+          <div class="room-content">
+            <h3>Suíte Premium</h3>
+
+            <p>
+              Mais conforto e espaço para sua experiência completa.
+            </p>
+
+            <div class="room-info">
+              <div>🛏️ 1 cama king size</div>
+              <div>👥 Até 4 hóspedes</div>
+              <div>☕ Café incluso</div>
+              <div class="available">Disponível</div>
+            </div>
+
+            <div class="price">
+              R$ 350 / diária
+            </div>
+
+            <button
+              class="btn reservar-btn"
+              data-quarto="Suíte Premium"
+              data-valor="350">
+              Reservar
+            </button>
+          </div>
+        </article>
+
+        <!-- Quarto 3 -->
+        <article class="room-card">
+
+          <div
+            class="room-image"
+            style="background-image: url('https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1200');">
+          </div>
+
+          <div class="room-content">
+            <h3>Quarto Luxo Família</h3>
+
+            <p>
+              Excelente opção para famílias maiores e longas estadias.
+            </p>
+
+            <div class="room-info">
+              <div>🛏️ 2 camas casal</div>
+              <div>👥 Até 5 hóspedes</div>
+              <div>🍽️ Café e jantar inclusos</div>
+              <div class="unavailable">Indisponível</div>
+            </div>
+
+            <div class="price">
+              R$ 480 / diária
+            </div>
+
+            <button
+              class="btn btn-disabled"
+              disabled>
+              Indisponível
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Hotel Aurora - Projeto acadêmico para Teste de Software</p>
+  </footer>
+  
+  <script src="../app/js/quartos.js"></script>
+</body>
+</html>
