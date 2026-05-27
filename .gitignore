@@ -1,2 +1,7 @@
-.doc
-.docx
+*.doc
+*.docx
+
+ambiente_luana/
+.venv/
+__pycache__/
+.pytest_cache/
